@@ -1,0 +1,372 @@
+@media (max-width: 1199px) {
+  .menu {
+    &__item {
+      padding-right: 18px;
+    }
+
+    a {
+      font-size: 13px;
+    }
+  }
+
+  .promo {
+    &__header {
+      font-size: 50px;
+    }
+  }
+
+  .reasons {
+    &__block {
+      align-items: flex-start;
+    }
+
+    &__description {
+      width: 300px;
+    }
+  }
+
+  .mobile {
+    &__item {
+      width: 300px;
+    }
+  }
+
+  .footer {
+    &__download {
+      img {
+        width: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .menu {
+    &__item {
+      padding-right: 8px;
+    }
+
+    a {
+      font-size: 10px;
+    }
+  }
+
+  .subheader {
+    &__logo {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      font-size: 11px;
+    }
+
+    &__phone {
+      font-size: 18px;
+    }
+
+    &__btn {
+      width: 100%;
+      height: 40px;
+      margin-top: 21px;
+    }
+  }
+
+  .promo {
+    &__header {
+      font-size: 40px;
+    }
+
+    &__subheader {
+      font-size: 30px;
+    }
+
+    &__btn {
+      margin-top: 100px;
+    }
+  }
+
+  .reasons {
+    &__block {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__description {
+      margin-top: 20px;
+    }
+  }
+
+  .mobile {
+    &__item {
+      width: 220px;
+    }
+  }
+
+  .footer {
+    &__download {
+      img {
+        width: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+
+    &_active {
+      left: 0;
+    }
+
+    &__item {
+      padding-right: 0;
+      border: none;
+      margin: 10px;
+
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+
+    span {
+      display: block;
+      height: 2px;
+      background-color: white;
+      margin-bottom: 2px;
+      transition: 0.5s all;
+    }
+
+    &_active {
+      span {
+        margin-bottom: -2px;
+
+        &:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .xs-hidden {
+    display: none;
+  }
+
+  .xs-visible {
+    display: block;
+  }
+
+  .subheader {
+    &__phone {
+      display: block;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    &__btn {
+      display: block;
+      width: 200px;
+      height: 40px;
+      margin: 10px auto;
+    }
+  }
+
+  .promo {
+    &__header {
+      margin-top: 50px;
+      line-height: 45px;
+    }
+
+    &__btn {
+      margin-top: 50px;
+    }
+  }
+
+  .reasons {
+    &__description {
+      width: 250px;
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    &__socials {
+      width: 100%;
+      justify-content: start;
+      bottom: 0;
+      order: 1;
+      position: absolute;
+    }
+
+    &__download {
+      width: 100%;
+      justify-content: end;
+      margin-top: 15px;
+
+      img {
+        width: 220px;
+        height: 30px;
+      }
+    }
+  }
+
+  .car {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .menu {
+    &__item {
+      width: 100%;
+      text-align: center;
+
+      a {
+        display: block;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .title_white {
+    font-size: 25px;
+  }
+
+  .subtitle_white {
+    display: none;
+  }
+
+  .subheader {
+    height: 60px;
+
+    &__logo {
+      margin-top: 16px;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__phone {
+      display: block;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 11px;
+    }
+
+    &__btn {
+      display: block;
+      width: 110px;
+      height: 22px;
+      margin: 7px auto;
+      font-size: 10px;
+    }
+  }
+
+  .promo {
+    min-height: 400px;
+    padding-bottom: 0;
+
+    &__description {
+      display: none;
+    }
+
+    &__header {
+      font-size: 30px;
+      padding: 0 24px;
+      line-height: 35px;
+    }
+
+    &__subheader {
+      font-size: 20px;
+      margin-top: 33px;
+      padding: 0 10px;
+      line-height: 30px;
+    }
+
+    &__btn {
+      margin-top: 250px;
+    }
+  }
+
+  .reasons {
+    &__round {
+      margin: 0;
+    }
+
+    &__description {
+      text-align: center;
+    }
+  }
+
+  .car {
+    &_white {
+      height: 360px;
+    }
+  }
+
+  .footer {
+    &__links {
+      width: 100%;
+    }
+
+    &__socials {
+      justify-content: center;
+      position: static;
+    }
+
+    &__download {
+      justify-content: center;
+    }
+  }
+
+  .world {
+    &__check {
+      margin-top: 390px;
+    }
+  }
+
+}
